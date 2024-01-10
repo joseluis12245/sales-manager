@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import { SalesManagerRoute } from "../../types/modules";
-import Summary from "../Summary/Summary";
+import { Summary } from "../Summary/Summary";
 import { useEffect } from "react";
 import Register from "../Register/Register";
 import { RequireAuth } from "../../auth/authContext";

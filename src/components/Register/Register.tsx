@@ -27,6 +27,7 @@ const Register: React.FC = () => {
     }else{
       setErrorPassword(false);
       dispatch(setInformationUser({
+        id: '',
         user: user,
         password: password
       }))

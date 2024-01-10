@@ -8,9 +8,8 @@ import { RequireAuth, useAuth } from "./../auth/authContext";
 import { addUserToList } from "./../features/userManagement/user-management-slice";
 import { checkUserInformation } from "./../features/userManagement/user-management-slice";
 import { useNavigate } from "react-router-dom";
-import ResponsiveAppBar from "./elements/MenuBar";
 import { AppRoutes } from "./Routes";
-import Summary from "./Summary/Summary";
+import { Summary } from "./Summary/Summary";
 import { SalesManagerRoute } from "../types/modules";
 import { Modules } from "./Modules";
 
@@ -45,9 +44,6 @@ const App: React.FC = () => {
 
   return (
     <>
-        <ResponsiveAppBar>
-          <AppRoutes routes={Modules} />
-        </ResponsiveAppBar>
 
       {/* <ResponsiveAppBar /> */}
 

@@ -2107,6 +2107,11 @@
     "@types/qs" "*"
     "@types/serve-static" "*"
 
+"@types/faker@^5.5.9":
+  version "5.5.9"
+  resolved "https://registry.npmjs.org/@types/faker/-/faker-5.5.9.tgz"
+  integrity sha512-uCx6mP3UY5SIO14XlspxsGjgaemrxpssJI0Ol+GfhxtcKpv9pgRZYsS4eeKeHVLje6Qtc8lGszuBI461+gVZBA==
+
 "@types/graceful-fs@^4.1.2":
   version "4.1.5"
   resolved "https://registry.npmjs.org/@types/graceful-fs/-/graceful-fs-4.1.5.tgz"
@@ -2210,6 +2215,14 @@
   version "1.2.4"
   resolved "https://registry.npmjs.org/@types/range-parser/-/range-parser-1.2.4.tgz"
   integrity sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==
+
+"@types/react-data-grid@^4.0.12":
+  version "4.0.12"
+  resolved "https://registry.npmjs.org/@types/react-data-grid/-/react-data-grid-4.0.12.tgz"
+  integrity sha512-YUaPzO7GQdQ8Uig7i5LP9QKvrbw4HLpK27Nbtt+/DsdNMMkfG4A/aJmd+qEJRkewR98tvd9HtM8/M+ybHV/b4w==
+  dependencies:
+    "@types/faker" "^5.5.9"
+    "@types/react" "*"
 
 "@types/react-dom@*", "@types/react-dom@^17.0.11":
   version "17.0.11"

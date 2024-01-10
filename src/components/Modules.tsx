@@ -1,5 +1,5 @@
 import { SalesManagerRoute } from "../types/modules";
-import Summary from "./Summary/Summary";
+import { Summary } from "./Summary/Summary";
 
 export const Modules: SalesManagerRoute[] = [
     {

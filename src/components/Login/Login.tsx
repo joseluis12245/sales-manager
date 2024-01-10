@@ -34,6 +34,7 @@ const Login: React.FC = () => {
 
   const Validatedata = () =>{
      dispatch(checkUserInformation({
+      id: '',
       user: userName,
       password: password
     }))
@@ -42,7 +43,7 @@ const Login: React.FC = () => {
   useEffect(()=>{
     if(userInformation.userIsValid){
       auth.signin(userInformation.userManagement.user, () => {
-         navigate('/summary', {replace:true});
+         navigate('/', {replace:true});
       });
     }
   },[userInformation.userIsValid])

@@ -10,7 +10,7 @@ import { AuthProvider } from "./auth/authContext";
 import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
 import { useAppDispatch, useAppSelector } from "./app/hooks";
-import Summary from "./components/Summary/Summary";
+import { Summary } from "./components/Summary/Summary";
 import ResponsiveAppBar from "./components/elements/MenuBar";
 import { AppRoutes } from "./components/Routes";
 import { Modules } from "./components/Modules";
@@ -20,26 +20,22 @@ render(
   <AuthProvider>
     <Provider store={store}>
       <BrowserRouter>
-        {/* <BrowserRouter>
         <Routes>
           <Route
             path="/"
             element={
               <RequireAuth>
-                <ResponsiveAppBar> */}
-        {/* <App /> */}
-        <ResponsiveAppBar>
-          <AppRoutes routes={Modules} />
-        </ResponsiveAppBar>
-        {/* </ResponsiveAppBar>
+                <ResponsiveAppBar>
+                  <Summary />
+                </ResponsiveAppBar>
               </RequireAuth>
             }
-          /> */}
+          />
 
-        {/* <Route path="/summary" element={<Summary />} />
-            <Route path="/register" element={<Register />} /> */}
-        {/* </Routes>
-      </BrowserRouter> */}
+          <Route path="/login" element={<Login />} />
+          {/* <Route path="/summary" element={<Summary />} /> */}
+          <Route path="/register" element={<Register />} />
+        </Routes>
       </BrowserRouter>
     </Provider>
   </AuthProvider>,
