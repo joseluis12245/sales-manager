@@ -25,7 +25,7 @@ render(
             path="/"
             element={
               <RequireAuth>
-                <ResponsiveAppBar>
+                <ResponsiveAppBar test>
                   <Summary />
                 </ResponsiveAppBar>
               </RequireAuth>
